@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form file</title>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Student Details Form</h1>
+            <label>Name :</label>
+            <input type="text" placeholder="Enter Your Name"/>
+            <br/><br/>
+            <label>Date Of Birth :</label>
+            <input type="date"/>
+            <br/><br/>
+            <label>Age :</label>
+            <input type="number"/>
+            <br/><br/>
+            <label>College Name :</label>
+            <input type="text"/><br/><br/>
+            <label>Phone Number :</label>
+            <input type="number"/><br/><br/>
+            <fieldset style="width:10%">
+                <legend     >Gender</legend>
+                <input type="radio" id="male" name="gender"  value="male"/>
+                <label>Male</label><br/>
+                <input type="radio" id="female" name="gender" value="female"/>
+                <label>Female</label><br/>
+                <input type="radio" id="other" name="gender" value="other"/>
+                <label>other</label>
+
+
+            </fieldset>
+            <fieldset style="width:30%">
+                <legend>Skill Set</legend>
+                <input type="checkbox" id="HTML" name="skill set" value="HTML"/>
+                <label>HTML</label><br/>
+                <input type="checkbox" id="CSS" name="skill set" value="CSS"/>
+                <label>CSS</label><br/>
+                <input type="checkbox" id="Java" name="skill set" value="Java"/>
+                <label>Java</label><br/>
+                <input type="checkbox" id="Python" name="skill set" value="Python"/>
+                <label>python</label><br/>
+
+            </fieldset>
+            <!-- DropDown -->
+            <label>Select Role :</label>
+            <select name="Role" id="Role">
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+            </select>
+            <br><br>
+
+            <label>Resume :</label>
+            <input type="file" name="Resume" id="Resume" accept=".pdf,.doc,.docx" required>
+            <br><br>
+
+            <label>Email :</label>
+            <input type="email" id="Email" required>
+            <br><br>
+
+            <label>Password :</label>
+            <input type="password" required>
+            <br><br>
+
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+        </form>
+    </div>
+</body>
+</html>

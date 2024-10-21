@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup and login</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+        }
+        .container{
+            width:100%;
+            height:100%;
+            background-image:url("../download.jpeg");
+            background-size: cover;
+            background-position:center;
+            position: absolute;
+        } 
+        .card{
+            width:400px;
+            height:500px;
+            position:relative;
+            margin:5% auto;
+            background: #fff;
+            padding: 5px;
+            
+        }
+        .buttons{
+            width:220px;
+            height:35px;
+            position:relative; 
+            box-shadow: 0 0 20px 9px #ff61241f;
+            border-radius: 30px;
+        }
+        button{
+            padding:10px 30px;
+            cursor:pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative; 
+        }
+        .socialpage{
+            margin: 30px auto;
+            text-align: center;
+            
+        }
+        .socialpage img{
+            width:40px;
+            height:40px;
+            margin: 0 10px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            border-radius: 100%;
+        }
+        form{
+            top:180px;
+            position: absolute;
+            width:280px;
+            transition: 0.5s;
+        }
+        .input-field{
+            width:100%;
+            padding:10px 0;
+            margin:5px 0;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-bottom: 1px solid #999;
+            outline:transparent;
+        }
+        #submit-btn{
+            width:85%;
+            padding:10px 30px;
+            cursor:pointer;
+            display:block;
+            margin:auto;
+            background: linear-gradient(to right,#ff105f,#ffad06);
+            border:0;
+            outline:none;
+            border-radius:30px;
+        }
+        .check-box{
+            margin:30px 10px 30px 0;
+        }
+        span{
+            color:rgb(64, 0, 255);
+            font-size: 12px;
+            bottom:65px;
+            position:absolute;
+        }
+         
+        #signup{
+            left:450px;
+        }
+        #Login{
+            left:50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="buttons">
+                <button>Login</button>
+                <button>signup</button>
+            </div>
+            <div class="socialpage">
+                <img src="../facebook.png" alt="">
+                <img src="../google.png" alt="">
+                <img src="../linkden.png" alt="">
+            </div>
+            <div class="loginpage">
+                <form id="Login" class="input-group">
+                <input type="text"
+                class="input-field"
+                placeholder="Enter emailid">
+                <br>
+                <input type="password"
+                class="input-field"
+                placeholder="Enter Password">
+                <br>
+                <input type="checkbox"
+                class="check-box"/><span>Remember password</span>
+                <br>
+                <button type="submit" id="submit-btn">Login</button>
+            </form>
+            </div>
+            <div class="signup page"></div>
+                <form id="signup" class="input-group">
+                <input type="text"
+                class="input-field"
+                placeholder="Enter emailid">
+                <br>
+                <input type="number"
+                class="check-box"
+                placeholder="Enter your mobile number"> 
+                <br>
+                <input type="password"
+                class="input-field"
+                placeholder="Enter Password">
+                <br>
+                <input type="password"
+                placeholder="Enter retype Password">
+                <br>
+                <input type="checkbox"
+                class="check-box"
+                <label for=" ">I agree terms and conditions</label>
+                <br>
+                <button>signup</button>
+            </form>
+                
+    </div>
+</div>
+</body>
+</html>
